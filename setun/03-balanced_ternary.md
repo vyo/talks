@@ -13,6 +13,9 @@ vvv
 
 ## 2<!-- .element: class="fragment fade-in" data-fragment-index="3" -->
 
+notes:
+well, it's binary. + 1
+
 vvv
 
 # Balanced
@@ -22,6 +25,9 @@ vvv
 ## 0<!-- .element: class="fragment fade-in" data-fragment-index="2" -->
 
 ## 1<!-- .element: class="fragment fade-in" data-fragment-index="3" -->
+
+notes:
+spoiler alert, there is no balanced binary
 
 vvv
 
