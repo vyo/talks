@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta charset="utf-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Сетунь</title>
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <!-- <link rel="stylesheet" href="css/theme/solarized.css"> -->
+  <link rel="stylesheet" href="css/theme/7p.css">
+
+  <!-- Theme used for syntax highlighting of code -->
+  <link rel="stylesheet" href="lib/css/zenburn.css">
+
+  <!-- Gitlab Pipeline CSS -->
+  <link rel="stylesheet" href="css/gitlab.css">
+
+
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement('link');
+link.rel = 'stylesheet';
+link.type = 'text/css';
+link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css'
+  : 'css/print/paper.css';
+document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="logo.md" data-separator=">>>" data-separator-vertical="vvv" data-notes="^notes:"></section>
+      <section data-markdown="setun/01-early_history.md" data-separator=">>>" data-separator-vertical="vvv" data-notes="^notes:"></section>
+      <section data-markdown="setun/02-radical_economy.md" data-separator=">>>" data-separator-vertical="vvv" data-notes="^notes:"></section>
+      <section data-markdown="setun/03-balanced_ternary.md" data-separator=">>>" data-separator-vertical="vvv" data-notes="^notes:"></section>
+      <section data-markdown="setun/04-late_history.md" data-separator=">>>" data-separator-vertical="vvv" data-notes="^notes:"></section>
+      <section data-markdown="setun/05-future_of_ternary.md" data-separator=">>>" data-separator-vertical="vvv" data-notes="^notes:"></section>
+    </div>
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+
+  <script>
+    // More info about config & dependencies:
+    // - https://github.com/hakimel/reveal.js#configuration
+    // - https://github.com/hakimel/reveal.js#dependencies
+    Reveal.initialize({
+      hash: false,
+      loop: true,
+      transition: 'slide',
+      backgroundTransition: 'fade',
+      dependencies: [
+        {src: 'plugin/markdown/marked.js'},
+        {src: 'plugin/markdown/markdown.js'},
+        {src: 'plugin/notes/notes.js', async: true},
+        {
+          src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+            hljs.initHighlightingOnLoad();
+          }
+        }
+      ]
+    });
+  </script>
+</body>
+</html>
